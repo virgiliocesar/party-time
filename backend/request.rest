@@ -25,6 +25,32 @@ Content-Type: application/json
 {
     "name": "TESTE ATUALIZAÇÃO",
     "description": "Algum descrição",
-    "price": "2500",
+    "price": "5500",
     "image": "https://www.ifsc.edu.br/documents/1920563/3622212/ifsc_verifica_telemedicina-05.jpg/340b440f-8dbe-400b-b61c-dfbcd7b1983d?t=1632854865119"
+}
+
+###
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+    "title": "Meu evento 2",
+    "author": "César",
+    "description": "Alguma descrição",
+    "budget": 5500,
+    "image": "https://www.ifsc.edu.br/documents/1920563/3622212/ifsc_verifica_telemedicina-05.jpg/340b440f-8dbe-400b-b61c-dfbcd7b1983d?t=1632854865119",
+    "services":[
+        {
+    "name": "Serviço 1",
+    "description": "Algum descrição",
+    "price": 3000,
+    "image": "https://www.ifsc.edu.br/documents/1920563/3622212/ifsc_verifica_telemedicina-05.jpg/340b440f-8dbe-400b-b61c-dfbcd7b1983d?t=1632854865119"
+},
+{
+    "name": "Serviço 2",
+    "description": "Algum descrição",
+    "price": 1600,
+    "image": "https://www.ifsc.edu.br/documents/1920563/3622212/ifsc_verifica_telemedicina-05.jpg/340b440f-8dbe-400b-b61c-dfbcd7b1983d?t=1632854865119"
+}
+    ]
 }

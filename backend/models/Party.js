@@ -1,34 +1,35 @@
-const mongoose = require("mongoose")
-const { Schema } = mongoose
+const mongoose = require("mongoose");
+const { Schema } = mongoose;
 
-const { ServiceSchema } = require("./Service.js")
+const { ServiceSchema } = require("./Service.js");
 
-const partySchema = new Schema({
+const partySchema = new Schema(
+  {
     title: {
-        title: String,
-        required: true,
+      type: String,
+      required: true,
     },
     author: {
-        type: String,
-        required: true,
+      type: String,
+      required: true,
     },
     description: {
-        type: String,
-        require: true,
+      type: String,
+      required: true,
     },
     budget: {
-        type: Number,
-        require: true,
+      type: Number,
+      required: true,
     },
     image: {
-        type: String,
-        require: true,
+      type: String,
+      required: true,
     },
     services: {
-        type: [ServiceSchema],
+      type: [ServiceSchema],
     },
-},
-    { timestamps: true }
+  },
+  { timestamps: true }
 );
 
 const Party = mongoose.model("Party", partySchema);
