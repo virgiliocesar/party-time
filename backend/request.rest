@@ -65,3 +65,29 @@ GET http://localhost:3000/api/parties/662b7a01440e4dccdbeea962
 
 ###
 DELETE http://localhost:3000/api/parties/662ba9a9fa2a68ed93c0c651
+
+###
+PUT http://localhost:3000/api/parties/662bac174dd7ea6abff57699
+Content-Type: application/json
+
+{
+    "title": "atualizei",
+    "author": "César",
+    "description": "Alguma descrição",
+    "budget": 7000,
+    "image": "https://www.ifsc.edu.br/documents/1920563/3622212/ifsc_verifica_telemedicina-05.jpg/340b440f-8dbe-400b-b61c-dfbcd7b1983d?t=1632854865119",
+    "services":[
+        {
+    "name": "Serviçodfd 1",
+    "description": "Algum descrição",
+    "price": 1000,
+    "image": "https://www.ifsc.edu.br/documents/1920563/3622212/ifsc_verifica_telemedicina-05.jpg/340b440f-8dbe-400b-b61c-dfbcd7b1983d?t=1632854865119"
+},
+{
+    "name": "Serviçdfo 2",
+    "description": "Algum descrição",
+    "price": 100,
+    "image": "https://www.ifsc.edu.br/documents/1920563/3622212/ifsc_verifica_telemedicina-05.jpg/340b440f-8dbe-400b-b61c-dfbcd7b1983d?t=1632854865119"
+}
+    ]
+}
