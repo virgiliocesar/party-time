@@ -1,8 +1,9 @@
 import { NavLink } from "react-router-dom";
+import "./Navbar.css"
 
 const Navbar = () => {
   return (
-    <nav>
+    <nav id="navbar">
 
       <h2>Party Time!</h2>
 
@@ -17,7 +18,7 @@ const Navbar = () => {
           </NavLink>
         </li>
       </ul>
-      
+
     </nav>
   );
 };
