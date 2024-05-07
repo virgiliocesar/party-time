@@ -30,14 +30,15 @@ import "./Party.css";
 
     loadParty();
   }, []);
-  
+
   //* Delete this party
-  
+
   const handleDelete = async () => {
     const res = await partyFetch.delete(`/parties/${id}`);
     if (res.status === 200) {
       navigate("/")
 
+      // eslint-disable-next-line react-hooks/rules-of-hooks
       useToast(res.data.msg)
 
     }
@@ -50,7 +51,9 @@ import "./Party.css";
         <h1>{party.title}</h1>
         <div>
           <div className="actions-container">
-            <Link className="btn">Editar</Link>
+            <Link to={`/party/edit/${party._id}`} className="btn">
+              Editar
+            </Link>
             <button onClick={handleDelete} className="btn-secundary">
               Excluir
             </button>
