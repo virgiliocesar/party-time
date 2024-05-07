@@ -23,8 +23,7 @@ p {
   color: #747990;
 }
 
-.btn,
-.btn-secundary {
+.btn{
   background-color: #7703fc ;
   color: #fff;
   padding: 0.5rem 1rem;
@@ -37,8 +36,29 @@ p {
   opacity: 0.8;
 }
 
-.btn-secundary:hover {
+/* .btn-secundary:hover {
   background-color: #fff;
   color: #283252;
   border: 1px solid #cfcfcf;
+} */
+
+.btn-secundary {
+  background-color: #fff;
+  color: #283252;
+  padding: 0.5rem 1rem;
+  border: 1px solid #cfcfcf;
+  border-radius: 8px;
+  transition: 0.4s;
+  cursor: pointer;
 }
+
+.btn-secundary:hover {
+  opacity: 0.8;
+  background-color: #7703fc ;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
